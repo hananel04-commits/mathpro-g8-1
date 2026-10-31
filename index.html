@@ -162,7 +162,7 @@ body.teach #spd{display:inline-block}
   <div class="crumb" id="pcrumb"></div>
   <h2 id="ptitle"></h2>
   <p class="teachnote" id="tnote"></p>
-  <button class="btn playcard" id="openv"><span class="big">▶</span><span id="vlab">영상 보기</span><span class="t" id="vlen"></span></button>
+  <button class="btn playcard" id="openv"><span class="big">▶</span><span id="vlab">영상 보기</span><span class="t" id="vlen">가로 화면으로 재생돼요</span></button>
   <div class="actions" id="actions"></div>
   <div class="nav"><button class="btn" id="prev">‹ 이전 영상</button><button class="btn" id="next">다음 영상 ›</button></div>
  </section>
@@ -276,7 +276,7 @@ function route(){
     document.title=$('#ptitle').textContent+' · '+U.name;
     const v=$('#vid'), ob=$('#openv');
     if(it.ready){ v.dataset.src=it.video; v.src=it.video; v.load(); ob.disabled=false; ob.classList.remove('off');
-      $('#vlab').textContent='영상 보기'; $('#vlen').textContent=(it.dur?mm(it.dur):''); }
+      $('#vlab').textContent='영상 보기'; $('#vlen').textContent=(it.dur?mm(it.dur)+' · ':'')+'가로 화면으로 재생돼요'; }
     else { stopV(); v.dataset.src=''; ob.disabled=true; ob.classList.add('off'); $('#vlab').textContent=it.kind==='concept'?'개념 영상 준비 중':'풀이 영상 준비 중'; $('#vlen').textContent='영상이 올라오면 이 주소에서 바로 볼 수 있어요'; }
     const hlT=hlOf(id), hlF=hlFor(id), hlIds=hlF.map(h=>h.target);
     const refs=(it.refs||[]).filter(r=>!hlIds.includes(r.target));
@@ -309,19 +309,30 @@ function route(){
 }
 /* ---- landscape-only player ---- */
 const ov=$('#ov'),st=$('#stage'),V=$('#vid');let hideT=0;
-/* inline player: no forced fullscreen / orientation lock / sideways rotation (Android: 1st tap only went fullscreen, late play() restarted audio after close) */
-function layout(){const W=window.innerWidth,H=window.innerHeight;
-  st.classList.remove('rot');
-  st.style.width=W+'px'; st.style.height=H+'px';}
+/* phones: always landscape fullscreen. play() runs first in the tap; fullscreen/orientation lock are fire-and-forget (never awaited, never call play).
+   If the screen is still portrait (lock unsupported/failed), #stage is CSS-rotated 90deg to fill the whole screen. Desktop: plain overlay. */
+const isPhone=()=>{try{return matchMedia('(pointer:coarse)').matches||Math.min(screen.width,screen.height)<600}catch(e){return false}};
+let fsSeen=false;
+function layout(){const W=window.innerWidth,H=window.innerHeight,rot=ov.classList.contains('phone')&&H>W;
+  st.classList.toggle('rot',rot);
+  st.style.width=(rot?H:W)+'px'; st.style.height=(rot?W:H)+'px';}
+function lockLand(){try{const p=screen.orientation&&screen.orientation.lock&&screen.orientation.lock('landscape');
+  if(p&&p.then) p.then(()=>{ if(!ov.classList.contains('on')) unlockO(); else layout(); },()=>{});}catch(e){}}
+function unlockO(){try{if(screen.orientation&&screen.orientation.unlock) screen.orientation.unlock();}catch(e){}}
+function exitFS(){try{ if(document.fullscreenElement) document.exitFullscreen().catch(()=>{}); else if(document.webkitFullscreenElement) document.webkitExitFullscreen(); }catch(e){}}
 function showCtl(){$('#ctl').classList.remove('hide');$('#x').classList.remove('hide');clearTimeout(hideT);
   if(!V.paused) hideT=setTimeout(()=>{$('#ctl').classList.add('hide');$('#x').classList.add('hide');$('#spdrow').classList.remove('on')},3000);}
 function openV(){ if(!V.getAttribute('src')&&V.dataset.src){V.src=V.dataset.src;V.load();}
   ov.classList.add('on');document.body.style.overflow='hidden';layout();
-  const p=V.play(); if(p&&p.catch) p.catch(()=>{}); showCtl();}
+  const p=V.play(); if(p&&p.catch) p.catch(()=>{}); showCtl();
+  const ph=isPhone(); ov.classList.toggle('phone',ph); fsSeen=false; layout(); if(!ph) return;
+  try{ const f=ov.requestFullscreen?ov.requestFullscreen({navigationUI:'hide'}):(ov.webkitRequestFullscreen&&ov.webkitRequestFullscreen());
+    if(f&&f.then) f.then(()=>{ if(!ov.classList.contains('on')){exitFS();return;} lockLand(); layout(); },()=>{}); }catch(e){}
+  lockLand();}
 function closeV(){ V.pause(); if(!ov.classList.contains('on')) return;
   V.removeAttribute('src'); V.querySelectorAll('source').forEach(s=>s.remove()); V.load();
-  ov.classList.remove('on');document.body.style.overflow='';
-  try{ if(document.fullscreenElement) document.exitFullscreen(); else if(document.webkitFullscreenElement) document.webkitExitFullscreen(); }catch(e){} }
+  ov.classList.remove('on','phone');document.body.style.overflow='';st.classList.remove('rot');
+  unlockO(); exitFS(); }
 $('#openv').onclick=()=>{ if(!$('#openv').disabled) openV(); }; $('#x').onclick=e=>{e.stopPropagation();closeV()};
 $('#pp').onclick=e=>{e.stopPropagation();V.paused?V.play():V.pause()};
 $('#bigplay').onclick=e=>{e.stopPropagation();V.play()};
@@ -342,7 +353,8 @@ V.addEventListener('play',()=>{ if(!ov.classList.contains('on')) V.pause(); });
 V.addEventListener('play',()=>{$('#pp').textContent='❚❚';$('#bigplay').classList.remove('on');showCtl()});
 V.addEventListener('pause',()=>{$('#pp').textContent='▶';$('#bigplay').classList.add('on');showCtl()});
 window.addEventListener('resize',()=>{if(ov.classList.contains('on'))layout()});
-const fsOut=()=>{ if(!document.fullscreenElement&&!document.webkitFullscreenElement&&ov.classList.contains('on')) closeV(); };
+const fsOut=()=>{ const fe=document.fullscreenElement||document.webkitFullscreenElement; if(fe){fsSeen=true;return;}
+  if(fsSeen&&ov.classList.contains('on')) closeV(); else if(ov.classList.contains('on')) layout(); };
 document.addEventListener('fullscreenchange',fsOut); document.addEventListener('webkitfullscreenchange',fsOut);
 window.addEventListener('pagehide',closeV); window.addEventListener('popstate',closeV);
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) closeV(); });

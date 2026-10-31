@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>중학교 2학년 수학개념</title>
+<style>
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{--ac:#175640;--ac-soft:#e8f5ee;--ac-dark:#c4e6d5;--ink:#1d2433;--sub:#6b7385;--mute:#a7adba;--bg:#f4f5f8;--card:#fff;--line:#e6e8ee;--red:#e11d48}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{word-break:keep-all;font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;color:var(--ink);background:var(--bg);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased;min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+.shell{display:flex;min-height:100vh}
+/* side nav (desktop) */
+aside{width:232px;flex:none;background:var(--card);border-right:1px solid var(--line);padding:26px 16px;position:sticky;top:0;height:100vh;overflow:auto}
+.brand{font-weight:700;font-size:17px;padding:0 10px}
+.brand small{display:block;font-weight:400;font-size:13px;color:var(--sub);margin-top:2px}
+.nav-h{font-size:12px;color:var(--mute);font-weight:600;margin:26px 10px 8px;letter-spacing:.02em}
+.nl{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border-radius:10px;font-size:15px;color:var(--ink);margin-bottom:2px}
+.nl:hover{background:var(--bg)}
+.nl.on{background:var(--ac-soft);color:var(--ac);font-weight:600}
+.nl.off{color:var(--mute);pointer-events:none}
+.nl .n{white-space:nowrap;margin-left:8px;font-size:12px;color:var(--mute);font-weight:400}
+.nl.on .n{color:var(--ac)}
+/* top bar (phone) */
+.topbar{display:none;background:var(--card);border-bottom:1px solid var(--line);padding:12px 16px;position:sticky;top:0;z-index:5}
+.topbar a{font-weight:700;font-size:16px}
+.topbar small{font-weight:400;color:var(--mute);font-size:12px;margin-left:6px}
+main{flex:1;min-width:0;padding:28px 36px 60px;max-width:1080px}
+.crumb{font-size:14px;color:var(--sub);margin-bottom:14px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.crumb a{color:var(--sub)} .crumb a:hover{color:var(--ac)}
+.crumb .sep{color:var(--mute)}
+.crumb b{color:var(--ink);font-weight:600}
+h1{font-size:26px;margin:0 0 6px;font-weight:700;letter-spacing:-.01em}
+h1 .hl{display:inline-block;background:#cfebdd;color:var(--ac);border-radius:999px;padding:0 12px;font-size:.9em;line-height:1.45}
+.lead{color:var(--sub);font-size:15px;margin:0 0 22px}
+.intro{max-width:620px;line-height:1.6;margin-bottom:8px}
+.sem{font-size:15px;font-weight:700;margin:22px 0 12px;display:flex;align-items:center;gap:8px}
+.sem small{font-size:13px;font-weight:400;color:var(--sub)}
+.src{font-size:12px;color:var(--mute);margin:26px 10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:16px}
+.card{background:var(--card);border-radius:18px;padding:20px;box-shadow:0 1px 2px rgba(15,45,38,.05),0 4px 14px rgba(15,45,38,.06);display:flex;flex-direction:column;min-height:168px;transition:transform .12s,box-shadow .12s;border:1px solid transparent}
+a.card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(15,45,38,.06),0 10px 24px rgba(15,45,38,.09);border-color:#cdeadb}
+.card .no{font-size:13px;font-weight:600;color:var(--ac)}
+.card .tt{font-size:19px;font-weight:700;margin:6px 0 4px;line-height:1.3;word-break:keep-all}
+.card .pg{font-size:13px;color:var(--sub)}
+.card .ft{margin-top:auto;padding-top:16px;display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--sub)}
+.pill{display:inline-block;background:var(--ac-soft);color:var(--ac);font-weight:600;border-radius:999px;padding:3px 10px;font-size:13px}
+.go{width:30px;height:30px;border-radius:50%;background:#cfebdd;color:var(--ac);display:flex;align-items:center;justify-content:center;font-size:15px}
+.card.off{background:#f9fafb;box-shadow:none;border:1px dashed var(--line);pointer-events:none}
+.card.off .no,.card.off .tt{color:var(--mute)} .card.off .pg{color:var(--mute)}
+.card.off .pill{background:#eef0f3;color:var(--mute)}
+/* section page */
+.pcard{background:var(--card);border-radius:16px;padding:16px 18px;margin:0 0 14px;box-shadow:0 1px 2px rgba(15,45,38,.05),0 4px 14px rgba(15,45,38,.05);scroll-margin-top:70px}
+.pcard h3{margin:0 0 12px;font-size:17px;font-weight:700;display:flex;align-items:baseline;gap:8px}
+.pcard h3 small{font-size:13px;font-weight:400;color:var(--sub)}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.btn{font-family:inherit;border:none;cursor:pointer;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;gap:4px;font-size:16px}
+.pb{min-width:64px;min-height:56px;padding:6px 12px;background:var(--card);color:var(--ink);border:1.5px solid #d9eee3;font-weight:700;flex-direction:column;line-height:1.1;font-size:17px}
+.pb:hover{border-color:var(--ac);color:var(--ac)}
+.pb .t{font-size:12px;font-weight:400;color:var(--sub);margin-top:3px}
+.cb{min-height:56px;padding:6px 16px;background:#cfebdd;color:var(--ac);font-weight:600;flex-direction:column;line-height:1.15;font-size:15px}
+.cb:hover{background:var(--ac-dark)}
+.cb .t{font-size:12px;font-weight:400;opacity:.85;margin-top:3px}
+.pdf.off,.pb.off,.cb.off{background:#f1f2f5;color:var(--mute);border-color:transparent;cursor:default}
+.none{font-size:13px;color:var(--mute)}
+.playcard.off{background:#eef0f3;color:var(--sub);box-shadow:none;cursor:default}
+.playcard.off .big{background:#d9dde5;color:#fff}
+.teachnote{display:none;font-size:13px;color:var(--sub);margin:0 0 12px}
+body.teach .teachnote{display:block}
+.pcard.hl{box-shadow:0 0 0 2px var(--ac)}
+.secnav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.secnav a{font-size:14px;color:var(--sub);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 14px}
+.secnav a:hover{color:var(--ac);border-color:var(--ac)}
+/* player page */
+#ptitle{font-size:22px;font-weight:700;margin:0 0 14px}
+#ptitle .kind{color:var(--ac)}
+.playcard{width:100%;max-width:720px;aspect-ratio:16/9;border-radius:18px;background:#1d2433;color:#fff;flex-direction:column;gap:10px;font-weight:600;font-size:18px;box-shadow:0 4px 18px rgba(15,45,38,.15)}
+.playcard .big{width:76px;height:76px;border-radius:50%;background:#cfebdd;color:var(--ac);display:flex;align-items:center;justify-content:center;font-size:30px;padding-left:6px}
+.playcard .t{font-size:13px;font-weight:400;opacity:.75}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;max-width:720px}
+.pdf{background:var(--card);color:var(--ink);border:1.5px solid #d9eee3;padding:10px 16px;font-weight:600;font-size:15px}
+.pdf:hover{border-color:var(--ac);color:var(--ac)}
+.ref{background:var(--ac-soft);color:var(--ac);padding:10px 16px;font-weight:600;font-size:15px}
+.note{width:100%;font-size:14px;color:var(--sub);background:var(--card);border-left:3px solid var(--ac);padding:10px 12px;border-radius:8px}
+.must{width:100%;background:var(--ac-soft);border:1.5px solid #a9d8c0;border-left:5px solid var(--ac);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.must .mh{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:16px;font-weight:700;color:var(--ac)}
+.mtag{display:inline-block;background:var(--ac);color:#fff;font-size:12px;font-weight:700;letter-spacing:.02em;padding:3px 9px;border-radius:999px;line-height:1.3}
+.must .md{font-size:14px;color:var(--ink);line-height:1.5}
+.must .mgo{margin-top:2px;background:#cfebdd;color:var(--ac);border:1.5px solid var(--ac);padding:9px 16px;font-weight:700;font-size:15px}
+.must .mgo:hover{background:var(--ac-dark)}
+.cb.must{box-shadow:0 0 0 2px var(--ac)}
+.cb.must .mtag{margin-bottom:4px;font-size:11px;padding:2px 8px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:6px;max-width:720px}
+.nav button{background:var(--card);border:1px solid var(--line);padding:10px 16px;font-size:14px;color:var(--ink)}
+.nav button[disabled]{opacity:.35;cursor:default}
+#vhome,#vunit,#vsection,#vplayer{display:none}
+#ov{position:fixed;inset:0;background:#000;z-index:50;display:none;overflow:hidden;touch-action:none}
+#ov.on{display:block}
+#stage{position:absolute;top:0;left:0;background:#000}
+#stage.rot{transform-origin:top left;transform:rotate(90deg) translateY(-100%)}
+#stage video{width:100%;height:100%;object-fit:contain;display:block;background:#000}
+#ctl{position:absolute;left:0;right:0;bottom:0;padding:10px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;display:flex;align-items:center;gap:12px;transition:opacity .25s}
+#ctl.hide{opacity:0;pointer-events:none}
+#spd{display:none}
+body.teach #spd{display:inline-block}
+#spdrow{position:absolute;right:16px;bottom:84px;display:none;gap:8px;background:rgba(0,0,0,.7);padding:8px;border-radius:16px}
+#spdrow.on{display:flex}
+#spdrow button{background:rgba(255,255,255,.15);color:#fff;min-width:64px;height:48px;border-radius:12px;font:700 20px system-ui,sans-serif}
+#spdrow button.sel{background:var(--red)}
+#ctl button{background:rgba(255,255,255,.15);color:#fff;min-width:58px;height:52px;border-radius:14px;font-size:24px;font-weight:700}
+#bar{flex:1;height:36px;display:flex;align-items:center;cursor:pointer}
+#bar i{display:block;height:8px;width:100%;background:rgba(255,255,255,.3);border-radius:4px;position:relative}
+#bar b{position:absolute;left:0;top:0;bottom:0;background:var(--red);border-radius:4px}
+#bar b:after{content:"";position:absolute;right:-11px;top:-7px;width:22px;height:22px;border-radius:50%;background:#fff}
+#tm{font-family:system-ui,sans-serif;font-size:15px;min-width:92px;text-align:center}
+#x{position:absolute;top:12px;right:14px;background:rgba(0,0,0,.55);color:#fff;width:56px;height:56px;border-radius:50%;font-size:28px;transition:opacity .25s}
+#x.hide{opacity:0;pointer-events:none}
+#bigplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100px;height:100px;border-radius:50%;background:rgba(225,29,72,.9);color:#fff;font-size:46px;padding-left:8px;display:none}
+#bigplay.on{display:flex}
+#ctl button{font-family:system-ui,sans-serif}
+@media (max-width:860px){aside{display:none}.topbar{display:block}main{padding:18px 16px 48px}
+ .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .card{padding:16px;min-height:150px;border-radius:16px}.card .tt{font-size:16px}
+ h1{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="topbar"><a href="#home">중학교 2학년 수학개념 <small>정선영수학</small></a></div>
+<div class="shell">
+<aside>
+ <div class="brand">중학교 2학년 수학개념</div>
+ <div class="nav-h">메뉴</div>
+ <a class="nl" id="nav-home" href="#home">단원 목록</a>
+ <div id="navunits"></div>
+ <div class="src">교재: 매쓰프로 개념 2-1</div>
+</aside>
+<main>
+ <section id="vhome">
+  <h1>중학교 2학년</h1>
+  <p class="lead intro">매쓰프로 개념 2-1 교재의 문제 풀이 영상 모음이에요. 단원과 소단원을 차례로 고른 뒤 쪽별 문제 번호를 누르면 풀이 영상과 풀이노트를 볼 수 있어요.</p>
+  <div id="units"></div>
+ </section>
+ <section id="vunit">
+  <div class="crumb" id="ucrumb"></div>
+  <h1 id="utitle"></h1>
+  <p class="lead" id="ulead"></p>
+  <div class="grid" id="secs"></div>
+ </section>
+ <section id="vsection">
+  <div class="crumb" id="scrumb"></div>
+  <h1 id="stitle"></h1>
+  <p class="lead" id="slead"></p>
+  <div id="spages"></div>
+  <div class="secnav" id="secnav"></div>
+ </section>
+ <section id="vplayer">
+  <div class="crumb" id="pcrumb"></div>
+  <h2 id="ptitle"></h2>
+  <p class="teachnote" id="tnote"></p>
+  <button class="btn playcard" id="openv"><span class="big">▶</span><span id="vlab">영상 보기</span><span class="t" id="vlen">가로 화면으로 재생돼요</span></button>
+  <div class="actions" id="actions"></div>
+  <div class="nav"><button class="btn" id="prev">‹ 이전 영상</button><button class="btn" id="next">다음 영상 ›</button></div>
+ </section>
+</main>
+</div>
+
+<div id="ov"><div id="stage"><video id="vid" playsinline webkit-playsinline preload="metadata"></video>
+ <button class="btn" id="bigplay">▶</button>
+ <button class="btn" id="x" aria-label="닫기">✕</button>
+ <div id="ctl"><button class="btn" id="pp">❚❚</button><button class="btn" id="rw">↺10</button><div id="bar"><i><b id="fill"></b></i></div><span id="tm">0:00 / 0:00</span><button class="btn" id="fw">10↻</button><button class="btn" id="spd">1×</button></div>
+ <div id="spdrow"></div>
+</div></div>
+<script src="data.js"></script>
+<script src="qr_map.js"></script>
+<script>
+const D=window.APP_DATA, $=s=>document.querySelector(s);
+/* ===== easy-to-change settings =====
+   SEMESTER_FIRST: which semester's units are shown on top (2 = 2학기 first; set to 1 when 1학기 starts)
+   ACTIVE_LABEL: badge text on a unit card that has videos
+   Units with videos come from data.js (D.units). */
+const SEMESTER_FIRST=2;
+const ACTIVE_LABEL='공부하기';
+/* 학기별 단원. 1학기 단원은 data.js(매쓰프로 개념 2-1 원본에서 추출)에서 자동으로 채움.
+   2학기(중2-2) 단원은 교재 목차를 확인한 뒤 {no,name,pages,secs:[...]} 형태로 넣으면 '준비 중' 카드로 보임.
+   단원이 하나도 없는 학기는 화면에 나오지 않음. */
+const SEMS=[{name:'1학기',book:'중2-1',units:D.units.map(u=>({no:u.no,name:u.name,pages:u.range}))},
+ {name:'2학기',book:'중2-2',units:[]}];
+const items={}, UD={}, pageSec={}, PPm={};
+/* 화면의 쪽 번호 = 인쇄 교재 쪽 번호(pp). 내부 주소는 원래 쪽 번호 그대로 */
+const PP=pg=>PPm[pg]||pg;
+const nv=p=>(p.concepts||[]).filter(k=>k.ready).length+p.problems.filter(e=>e.ready).length;
+D.units.forEach(u=>{
+  const U={no:u.no,name:u.name,range:u.range,title:`${u.no}. ${u.name}`,order:[],secs:[]};UD[u.no]=U;
+  u.pages.forEach(p=>{ PPm[p.page]=p.pp||p.page;
+    (p.concepts||[]).forEach(k=>{const c=Object.assign({kind:'concept',page:p.page,unit:u.no},k);items[c.id]=c;if(k.ready)U.order.push(c.id)});
+    p.problems.forEach(e=>{const x=Object.assign({kind:'problem',page:p.page,unit:u.no},e);items[e.id]=x;if(e.ready)U.order.push(e.id)});
+    let s=U.secs.find(x=>x.id===p.section);if(!s){s={id:p.section,key:`${u.no}-${p.section}`,unit:u.no,name:p.sectionName,pages:[]};U.secs.push(s)}s.pages.push(p);
+  });
+  U.secs.forEach(s=>{s.from=PP(s.pages[0].page);s.to=PP(s.pages[s.pages.length-1].page);s.v=s.pages.reduce((a,p)=>a+nv(p),0);
+    s.c=s.pages.reduce((a,p)=>a+(p.concepts||[]).filter(k=>k.ready).length,0);s.pages.forEach(p=>pageSec[p.page]=s)});
+});
+const mm=s=>Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');
+const lbl=l=>l.replace(/\((\d)\)/,'-($1)');
+const sep='<span class="sep">›</span>';
+const crumbs=a=>a.map((x,i)=>i<a.length-1?`<a href="${x[1]}">${x[0]}</a>`:`<b>${x[0]}</b>`).join(sep);
+let curUnit=0;
+/* 꼭 보기(must-watch) 강조 영상. target: 강조할 영상 id, from: 그 영상을 안내할 문제 id들.
+   from 문제에 같은 target으로 가는 일반 개념 버튼이 있으면 이 안내로 대신함. 다른 단원도 여기에 한 줄씩 추가. */
+const HIGHLIGHTS=[
+ {target:'c23-3', tag:'꼭 보기', title:'활용 문제 식 세우는 방법',
+  desc:'활용 문제에 자주 나오는 식 세 가지(거리·속력·시간, 더 유리한 방법, 삼각형의 세 변)를 정리해요.',
+  from:['p24-2','p24-3','p24-5','p24-6']},
+];
+const hlOf=id=>HIGHLIGHTS.find(h=>h.target===id), hlFor=id=>HIGHLIGHTS.filter(h=>h.from.includes(id)&&items[h.target]&&items[h.target].ready);
+
+function build(){
+  let h='',n='';
+  const sems=(SEMESTER_FIRST===2?[SEMS[1],SEMS[0]]:SEMS).filter(sm=>sm.units.length);
+  sems.forEach(sm=>{h+=`<div class="sem">${sm.name} <small>${sm.book}</small></div><div class="grid">`;n+=`<div class="nav-h">${sm.name}</div>`;
+  sm.units.forEach(u=>{const U=UD[u.no];
+    h+=U?`<a class="card" href="#u${u.no}"><span class="no">${u.no}단원</span><span class="tt">${u.name}</span><span class="pg">${u.pages} · 소단원 ${U.secs.length}개</span><span class="ft"><span class="pill">${ACTIVE_LABEL}</span><span class="go">›</span></span></a>`
+         :`<div class="card off"><span class="no">${u.no}단원</span><span class="tt">${u.name}</span><span class="pg">${u.pages} · 소단원 ${(u.secs||[]).length}개</span><span class="ft"><span class="pill">준비 중</span></span></div>`;
+    n+=U?`<a class="nl" id="nav-u${u.no}" href="#u${u.no}">${u.no}. ${u.name}</a>`:`<span class="nl off">${u.no}. ${u.name}<span class="n">준비 중</span></span>`;});h+='</div>';});
+  $('#units').innerHTML=h; $('#navunits').innerHTML=n;
+}
+function renderUnit(no){const U=UD[no];
+  $('#ucrumb').innerHTML=crumbs([['단원 목록','#home'],[U.title]]);
+  $('#utitle').textContent=U.title;
+  $('#ulead').textContent=`${D.book} · ${U.range} · 소단원을 눌러 들어가세요.`;
+  $('#secs').innerHTML=U.secs.map(s=>`<a class="card" href="#s${s.key}"><span class="no">${s.id}</span><span class="tt">${s.name}</span><span class="pg">${s.from===s.to?s.from:s.from+'~'+s.to}쪽</span><span class="ft"><span class="pill">${ACTIVE_LABEL}</span><span class="go">›</span></span></a>`).join('');
+}
+function showOnly(id,unit){['home','unit','section','player'].forEach(x=>$('#v'+x).style.display=x===id?'block':'none');
+  curUnit=unit||0;
+  document.querySelectorAll('.nl').forEach(e=>e.classList.remove('on'));
+  const nb=id==='home'?$('#nav-home'):$('#nav-u'+curUnit); if(nb) nb.classList.add('on');}
+function renderSection(s){
+  const U=UD[s.unit], i=U.secs.indexOf(s);
+  $('#scrumb').innerHTML=crumbs([['단원 목록','#home'],[U.title,'#u'+U.no],[s.id+'. '+s.name]]);
+  $('#stitle').textContent=s.id+'. '+s.name;
+  const np=s.pages.reduce((a,p)=>a+p.problems.length,0);
+  $('#slead').textContent=`${s.from===s.to?s.from:s.from+'~'+s.to}쪽 · 문제 ${np}개`+(s.v?` · 영상 ${s.v}개`:'');
+  let h='';
+  s.pages.forEach(p=>{
+    h+=`<div class="pcard" id="page${p.page}"><h3>${PP(p.page)}쪽 <small>${p.kind}</small></h3><div class="row">`;
+    (p.concepts||[]).forEach(k=>{const nm=(p.concepts.length>1&&k.title)?k.title:'개념 설명';
+      const hl=hlOf(k.id);
+      h+=k.ready?`<a class="btn cb${hl?' must':''}" href="#${k.id}">${hl?`<span class="mtag">${hl.tag}</span>`:''}${nm}<span class="t">${mm(k.dur)}</span></a>`
+                :`<a class="btn cb off" href="#${k.id}">${nm}<span class="t">준비 중</span></a>`});
+    p.problems.forEach(e=>{h+=e.ready?`<a class="btn pb" href="#${e.id}">${lbl(e.label)}<span class="t">${mm(e.dur)}</span></a>`
+                                   :`<a class="btn pb off" href="#${e.id}">${lbl(e.label)}<span class="t">준비 중</span></a>`});
+    if(!p.problems.length) h+=`<span class="none">이 쪽은 개념만 있어요</span>`;
+    h+='</div></div>';
+  });
+  $('#spages').innerHTML=h;
+  const pv=U.secs[i-1],nx=U.secs[i+1];
+  $('#secnav').innerHTML=(pv?`<a href="#s${pv.key}">‹ ${pv.id}. ${pv.name}</a>`:'<span></span>')+(nx?`<a href="#s${nx.key}">${nx.id}. ${nx.name} ›</a>`:'<span></span>');
+}
+function stopV(){const v=$('#vid');v.pause();v.removeAttribute('src');v.load();}
+function route(){
+  const id=decodeURIComponent(location.hash.slice(1)); closeV();
+  /* 인쇄 교재 QR(caillou-study/mathpro-circle/?s=g8_1&p=<인쇄 쪽>-<키>) → 그 페이지가 이 앱 #qr-<키> 로 보냄 → qr_map.js 로 앱 주소로 바꿈 */
+  if(id.startsWith('qr-')){const r=(window.QR_MAP||{})[id.slice(3)]; location.replace('#'+(r||'home')); return;}
+  let it=items[id], cm;
+  /* 영상이 아직 없는 개념(#c37 등)도 자기 화면('개념 영상 준비 중')으로 */
+  if(!it&&(cm=id.match(/^c(\d+)(?:-(\d))?$/))&&pageSec[cm[1]]&&pageSec[cm[1]].pages.some(p=>p.page==cm[1]&&p.kind==='개념잡기'))
+    it={id,kind:'concept',page:+cm[1],unit:pageSec[cm[1]].unit,ready:false};
+  if(it){ const U=UD[it.unit], order=U.order; showOnly('player',U.no);
+    const s=pageSec[it.page];
+    $('#pcrumb').innerHTML=crumbs([['단원 목록','#home'],[U.title,'#u'+U.no],[s.id+'. '+s.name,'#page'+it.page],[`${PP(it.page)}쪽 ${it.kind==='concept'?'개념':lbl(it.label)+'번'}`]]);
+    $('#ptitle').innerHTML=it.kind==='concept'?`${PP(it.page)}쪽 <span class="kind">개념 설명</span>`:`${PP(it.page)}쪽 ${lbl(it.label)}번 풀이`;
+    document.title=$('#ptitle').textContent+' · '+U.name;
+    const v=$('#vid'), ob=$('#openv');
+    if(it.ready){ v.src=it.video; v.load(); ob.disabled=false; ob.classList.remove('off');
+      $('#vlab').textContent='영상 보기'; $('#vlen').textContent=(it.dur?mm(it.dur)+' · ':'')+'가로 화면으로 재생돼요'; }
+    else { stopV(); ob.disabled=true; ob.classList.add('off'); $('#vlab').textContent=it.kind==='concept'?'개념 영상 준비 중':'풀이 영상 준비 중'; $('#vlen').textContent='영상이 올라오면 이 주소에서 바로 볼 수 있어요'; }
+    const hlT=hlOf(id), hlF=hlFor(id), hlIds=hlF.map(h=>h.target);
+    const refs=(it.refs||[]).filter(r=>!hlIds.includes(r.target));
+    let a='';
+    if(hlT) a+=`<div class="must"><div class="mh"><span class="mtag">${hlT.tag}</span>${hlT.title}</div><div class="md">${hlT.desc}</div></div>`;
+    hlF.forEach(h=>{const t=items[h.target], r=(it.refs||[]).find(x=>x.target===h.target);
+      a+=`<div class="must"><div class="mh"><span class="mtag">${h.tag}</span>${h.title}</div><div class="md">${h.desc}</div><a class="btn mgo" href="#${h.target}">▶ ${r?r.label:PP(t.page)+'쪽 개념 설명'} 보기</a></div>`;});
+    a+=it.pdf?`<a class="btn pdf" href="${it.pdf}" target="_blank" rel="noopener">풀이노트 PDF</a>`:`<span class="btn pdf off">풀이노트 준비 중</span>`;
+    refs.forEach(r=>{a+=`<a class="btn ref" href="#${r.target}">▶ ${r.label}</a>`});
+    if(it.kind==='concept'&&it.title) a+=`<div class="note">${it.title}</div>`;
+    const sameR=refs.filter(r=>(r.concept||'').includes('같은 문제')), conR=refs.filter(r=>!(r.concept||'').includes('같은 문제'));
+    sameR.forEach(r=>{a+=`<div class="note">${r.concept}예요. 위 영상을 보세요.</div>`});
+    if(conR.length) a+=`<div class="note">이 문제에 쓰인 개념은 위 영상에서 자세히 설명했어요.</div>`;
+    $('#actions').innerHTML=a;
+    const i=order.indexOf(id);
+    $('#prev').disabled=i<=0; $('#next').disabled=i<0||i>=order.length-1;
+    $('#prev').onclick=()=>{if(i>0)location.hash=order[i-1]};
+    $('#next').onclick=()=>{if(i>=0&&i<order.length-1)location.hash=order[i+1]};
+    window.scrollTo(0,0); return;}
+  stopV(); document.title='중학교 2학년 수학개념';
+  let m,s;
+  /* 없는 문제 번호(#p17-1 등)는 그 쪽으로 */
+  if((m=id.match(/^p(\d+)-\d+$/))&&pageSec[m[1]]) { location.replace('#page'+m[1]); return; }
+  if((m=id.match(/^page(\d+)$/))&&(s=pageSec[m[1]])){showOnly('section',s.unit);renderSection(s);
+    const el=$('#'+id); if(el) el.classList.add('hl'); requestAnimationFrame(()=>el&&el.scrollIntoView({block:'start'})); return;}
+  /* #s1-02 = 1단원 02 소단원 */
+  if((m=id.match(/^s(\d+)-(\d\d)$/))&&UD[m[1]]&&(s=UD[m[1]].secs.find(x=>x.id===m[2]))){showOnly('section',s.unit);renderSection(s);window.scrollTo(0,0);return;}
+  if((m=id.match(/^u(\d+)$/))&&UD[m[1]]){showOnly('unit',+m[1]);renderUnit(+m[1]);window.scrollTo(0,0);return;}
+  showOnly('home');window.scrollTo(0,0);
+}
+/* ---- landscape-only player ---- */
+const ov=$('#ov'),st=$('#stage'),V=$('#vid');let hideT=0;
+function layout(){const W=window.innerWidth,H=window.innerHeight,portrait=H>W;
+  st.classList.toggle('rot',portrait);
+  st.style.width=(portrait?H:W)+'px'; st.style.height=(portrait?W:H)+'px';}
+function showCtl(){$('#ctl').classList.remove('hide');$('#x').classList.remove('hide');clearTimeout(hideT);
+  if(!V.paused) hideT=setTimeout(()=>{$('#ctl').classList.add('hide');$('#x').classList.add('hide');$('#spdrow').classList.remove('on')},3000);}
+async function openV(){ov.classList.add('on');document.body.style.overflow='hidden';layout();
+  try{ if(ov.requestFullscreen) await ov.requestFullscreen({navigationUI:'hide'}); else if(ov.webkitRequestFullscreen) ov.webkitRequestFullscreen(); }catch(e){}
+  try{ if(screen.orientation&&screen.orientation.lock) await screen.orientation.lock('landscape'); }catch(e){}
+  layout(); V.play().catch(()=>{}); showCtl();}
+function closeV(){ if(!ov.classList.contains('on')) return; V.pause(); ov.classList.remove('on');document.body.style.overflow='';
+  try{ if(screen.orientation&&screen.orientation.unlock) screen.orientation.unlock(); }catch(e){}
+  try{ if(document.fullscreenElement) document.exitFullscreen(); }catch(e){} }
+$('#openv').onclick=()=>{ if(!$('#openv').disabled) openV(); }; $('#x').onclick=e=>{e.stopPropagation();closeV()};
+$('#pp').onclick=e=>{e.stopPropagation();V.paused?V.play():V.pause()};
+$('#bigplay').onclick=e=>{e.stopPropagation();V.play()};
+$('#rw').onclick=e=>{e.stopPropagation();V.currentTime=Math.max(0,V.currentTime-10);showCtl()};
+$('#fw').onclick=e=>{e.stopPropagation();V.currentTime=Math.min(V.duration||0,V.currentTime+10);showCtl()};
+st.addEventListener('click',()=>{ if($('#ctl').classList.contains('hide')) showCtl(); else if(!V.paused){$('#ctl').classList.add('hide');$('#x').classList.add('hide')} });
+function seekAt(ev){const b=$('#bar').getBoundingClientRect(),rot=st.classList.contains('rot');
+  const f=rot?(ev.clientY-b.top)/b.height:(ev.clientX-b.left)/b.width;
+  if(V.duration) V.currentTime=Math.min(1,Math.max(0,f))*V.duration; showCtl();}
+let drag=false;const bar=$('#bar');
+bar.addEventListener('pointerdown',e=>{e.stopPropagation();drag=true;bar.setPointerCapture(e.pointerId);seekAt(e)});
+bar.addEventListener('pointermove',e=>{if(drag)seekAt(e)});
+bar.addEventListener('pointerup',()=>{drag=false});
+bar.addEventListener('click',e=>e.stopPropagation());
+const upd=()=>{const d=V.duration||0;$('#fill').style.width=(d?V.currentTime/d*100:0)+'%';$('#tm').textContent=mm(V.currentTime||0)+' / '+mm(d)};
+V.addEventListener('timeupdate',upd);V.addEventListener('loadedmetadata',upd);
+V.addEventListener('play',()=>{$('#pp').textContent='❚❚';$('#bigplay').classList.remove('on');showCtl()});
+V.addEventListener('pause',()=>{$('#pp').textContent='▶';$('#bigplay').classList.add('on');showCtl()});
+window.addEventListener('resize',()=>{if(ov.classList.contains('on'))layout()});
+document.addEventListener('fullscreenchange',()=>{ if(!document.fullscreenElement&&ov.classList.contains('on')) layout(); });
+/* teacher-only playback speed: enabled per device via ?teacher=<token>, disabled via ?teacher=off */
+const T_HASH='6032d3a94e53c0c78de895dbbcf079d7fbeb9ad9a9fced0e7a647863303d37e2',RATES=[0.75,1,1.25,1.5,2];
+let rate=1;
+function isTeach(){try{return localStorage.getItem('mp8_teacher')==='1'}catch(e){return false}}
+function applyRate(){ if(!isTeach()) return; V.defaultPlaybackRate=rate; V.playbackRate=rate; }
+function teachUI(){ const on=isTeach(); document.body.classList.toggle('teach',on);
+  if(!on){rate=1;V.defaultPlaybackRate=1;V.playbackRate=1;$('#spdrow').classList.remove('on');return;}
+  rate=parseFloat(localStorage.getItem('mp8_rate'))||1; if(!RATES.includes(rate)) rate=1;
+  $('#spd').textContent=rate+'×'; $('#tnote').textContent='선생님 모드 · 재생 속도 '+rate+'× (영상 화면 오른쪽 아래 버튼으로 바꿔요)';
+  $('#spdrow').innerHTML=RATES.map(r=>'<button class="btn'+(r===rate?' sel':'')+'" data-r="'+r+'">'+r+'×</button>').join('');
+  applyRate(); }
+async function teachParam(){ const q=new URLSearchParams(location.search).get('teacher'); if(q===null) return;
+  try{ if(q==='off'){localStorage.removeItem('mp8_teacher');localStorage.removeItem('mp8_rate');}
+    else if(window.crypto&&crypto.subtle){ const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(q));
+      const h=[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join(''); if(h===T_HASH) localStorage.setItem('mp8_teacher','1'); } }catch(e){}
+  history.replaceState(null,'',location.pathname+location.hash); teachUI(); }
+$('#spd').onclick=e=>{e.stopPropagation();$('#spdrow').classList.toggle('on');showCtl()};
+$('#spdrow').addEventListener('click',e=>{e.stopPropagation();const b=e.target.closest('button');if(!b)return;
+  rate=parseFloat(b.dataset.r); try{localStorage.setItem('mp8_rate',String(rate))}catch(x){}
+  $('#spdrow').classList.remove('on'); teachUI(); showCtl();});
+V.addEventListener('loadedmetadata',applyRate); V.addEventListener('play',applyRate);
+teachUI(); teachParam();
+build(); window.addEventListener('hashchange',route); route();
+</script>
+</body>
+</html>

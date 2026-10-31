@@ -321,7 +321,7 @@ function lockLand(){try{const p=screen.orientation&&screen.orientation.lock&&scr
 function unlockO(){try{if(screen.orientation&&screen.orientation.unlock) screen.orientation.unlock();}catch(e){}}
 function exitFS(){try{ if(document.fullscreenElement) document.exitFullscreen().catch(()=>{}); else if(document.webkitFullscreenElement) document.webkitExitFullscreen(); }catch(e){}}
 function showCtl(){$('#ctl').classList.remove('hide');$('#x').classList.remove('hide');clearTimeout(hideT);
-  if(!V.paused) hideT=setTimeout(()=>{$('#ctl').classList.add('hide');$('#x').classList.add('hide');$('#spdrow').classList.remove('on')},3000);}
+  if(!V.paused) hideT=setTimeout(()=>{$('#ctl').classList.add('hide');$('#x').classList.add('hide');$('#spdrow').classList.remove('on')},1500);}
 function openV(){ if(!V.getAttribute('src')&&V.dataset.src){V.src=V.dataset.src;V.load();}
   ov.classList.add('on');document.body.style.overflow='hidden';layout();
   const p=V.play(); if(p&&p.catch) p.catch(()=>{}); showCtl();

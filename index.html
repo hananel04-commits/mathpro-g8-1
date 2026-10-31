@@ -162,7 +162,7 @@ body.teach #spd{display:inline-block}
   <div class="crumb" id="pcrumb"></div>
   <h2 id="ptitle"></h2>
   <p class="teachnote" id="tnote"></p>
-  <button class="btn playcard" id="openv"><span class="big">▶</span><span id="vlab">영상 보기</span><span class="t" id="vlen">가로 화면으로 재생돼요</span></button>
+  <button class="btn playcard" id="openv"><span class="big">▶</span><span id="vlab">영상 보기</span><span class="t" id="vlen"></span></button>
   <div class="actions" id="actions"></div>
   <div class="nav"><button class="btn" id="prev">‹ 이전 영상</button><button class="btn" id="next">다음 영상 ›</button></div>
  </section>
@@ -276,7 +276,7 @@ function route(){
     document.title=$('#ptitle').textContent+' · '+U.name;
     const v=$('#vid'), ob=$('#openv');
     if(it.ready){ v.dataset.src=it.video; v.src=it.video; v.load(); ob.disabled=false; ob.classList.remove('off');
-      $('#vlab').textContent='영상 보기'; $('#vlen').textContent=(it.dur?mm(it.dur)+' · ':'')+'가로 화면으로 재생돼요'; }
+      $('#vlab').textContent='영상 보기'; $('#vlen').textContent=(it.dur?mm(it.dur):''); }
     else { stopV(); v.dataset.src=''; ob.disabled=true; ob.classList.add('off'); $('#vlab').textContent=it.kind==='concept'?'개념 영상 준비 중':'풀이 영상 준비 중'; $('#vlen').textContent='영상이 올라오면 이 주소에서 바로 볼 수 있어요'; }
     const hlT=hlOf(id), hlF=hlFor(id), hlIds=hlF.map(h=>h.target);
     const refs=(it.refs||[]).filter(r=>!hlIds.includes(r.target));

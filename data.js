@@ -42,7 +42,7 @@ window.APP_DATA={
        ],
        "video": "media/p1_2.mp4",
        "pdf": "media/p1_2_note_A4.pdf",
-       "dur": 72.0,
+       "dur": 72.1,
        "answer": "(1) 유 (2) 유"
       }
      ],
@@ -61,7 +61,7 @@ window.APP_DATA={
        "title": "유한소수의 분수 표현",
        "video": "media/concept_1_02.mp4",
        "pdf": "media/concept_1_02_note_A4.pdf",
-       "dur": 92.4
+       "dur": 92.3
       }
      ]
     },
@@ -85,7 +85,7 @@ window.APP_DATA={
        ],
        "video": "media/p2_1.mp4",
        "pdf": "media/p2_1_note_A4.pdf",
-       "dur": 72.2,
+       "dur": 72.1,
        "answer": "①"
       },
       {
@@ -101,7 +101,7 @@ window.APP_DATA={
        ],
        "video": "media/p2_2.mp4",
        "pdf": "media/p2_2_note_A4.pdf",
-       "dur": 83.5,
+       "dur": 83.4,
        "answer": "③"
       },
       {
@@ -138,7 +138,7 @@ window.APP_DATA={
        ],
        "video": "media/p2_4.mp4",
        "pdf": "media/p2_4_note_A4.pdf",
-       "dur": 80.1,
+       "dur": 80.2,
        "answer": "②, ⑤"
       },
       {
@@ -154,7 +154,7 @@ window.APP_DATA={
        ],
        "video": "media/p2_5.mp4",
        "pdf": "media/p2_5_note_A4.pdf",
-       "dur": 77.8,
+       "dur": 77.7,
        "answer": "③"
       },
       {
@@ -170,7 +170,7 @@ window.APP_DATA={
        ],
        "video": "media/p2_6.mp4",
        "pdf": "media/p2_6_note_A4.pdf",
-       "dur": 62.5,
+       "dur": 62.6,
        "answer": "4개"
       }
      ]
@@ -222,7 +222,7 @@ window.APP_DATA={
        "title": "순환소수",
        "video": "media/concept_3_01.mp4",
        "pdf": "media/concept_3_01_note_A4.pdf",
-       "dur": 93.0
+       "dur": 92.9
       }
      ]
     },
@@ -267,7 +267,7 @@ window.APP_DATA={
        ],
        "video": "media/p4_2.mp4",
        "pdf": "media/p4_2_note_A4.pdf",
-       "dur": 71.8,
+       "dur": 71.9,
        "answer": "(1) ○ (2) ○ (3) ×"
       },
       {
@@ -299,7 +299,7 @@ window.APP_DATA={
        ],
        "video": "media/p4_4.mp4",
        "pdf": "media/p4_4_note_A4.pdf",
-       "dur": 71.5,
+       "dur": 71.6,
        "answer": "7"
       },
       {
@@ -356,7 +356,7 @@ window.APP_DATA={
        ],
        "video": "media/p5_1.mp4",
        "pdf": "media/p5_1_note_A4.pdf",
-       "dur": 75.6,
+       "dur": 75.5,
        "answer": "100, 10, 90, 47, 47/90"
       },
       {
@@ -372,7 +372,7 @@ window.APP_DATA={
        ],
        "video": "media/p5_2.mp4",
        "pdf": "media/p5_2_note_A4.pdf",
-       "dur": 54.4,
+       "dur": 54.3,
        "answer": "(1) 5 (2) 999"
       },
       {
@@ -399,7 +399,7 @@ window.APP_DATA={
        "title": "순환소수를 분수로 (1)",
        "video": "media/concept_5_01.mp4",
        "pdf": "media/concept_5_01_note_A4.pdf",
-       "dur": 82.0
+       "dur": 82.1
       },
       {
        "id": "c5-2",
@@ -447,7 +447,7 @@ window.APP_DATA={
        ],
        "video": "media/p6_2.mp4",
        "pdf": "media/p6_2_note_A4.pdf",
-       "dur": 79.8,
+       "dur": 79.7,
        "answer": "(1) 41/111 (2) 13/25 (3) 413/330"
       },
       {
@@ -552,7 +552,7 @@ window.APP_DATA={
        ],
        "video": "media/p7_2.mp4",
        "pdf": "media/p7_2_note_A4.pdf",
-       "dur": 70.1,
+       "dur": 70.2,
        "answer": "ㄱ, ㄹ"
       },
       {
@@ -568,7 +568,7 @@ window.APP_DATA={
        ],
        "video": "media/p7_3.mp4",
        "pdf": "media/p7_3_note_A4.pdf",
-       "dur": 49.9,
+       "dur": 49.8,
        "answer": "(1) < (2) <"
       },
       {
@@ -640,7 +640,7 @@ window.APP_DATA={
        ],
        "video": "media/p8_2.mp4",
        "pdf": "media/p8_2_note_A4.pdf",
-       "dur": 39.9,
+       "dur": 40.0,
        "answer": "②"
       },
       {
@@ -672,7 +672,7 @@ window.APP_DATA={
        ],
        "video": "media/p8_4.mp4",
        "pdf": "media/p8_4_note_A4.pdf",
-       "dur": 55.8,
+       "dur": 55.9,
        "answer": "③"
       },
       {
@@ -729,7 +729,7 @@ window.APP_DATA={
        ],
        "video": "media/p9_1.mp4",
        "pdf": "media/p9_1_note_A4.pdf",
-       "dur": 61.1,
+       "dur": 61.2,
        "answer": "(1) a⁵ (2) 3⁶ (3) b⁹ (4) x¹⁰y⁵"
       },
       {
@@ -750,7 +750,7 @@ window.APP_DATA={
        ],
        "video": "media/p9_2.mp4",
        "pdf": "media/p9_2_note_A4.pdf",
-       "dur": 72.8,
+       "dur": 72.9,
        "answer": "(1) x⁸y⁴ (2) −27a³b⁹"
       }
      ],
@@ -761,7 +761,7 @@ window.APP_DATA={
        "title": "지수법칙 – 거듭제곱의 곱셈",
        "video": "media/concept_9_01.mp4",
        "pdf": "media/concept_9_01_note_A4.pdf",
-       "dur": 65.6
+       "dur": 65.7
       },
       {
        "id": "c9-2",
@@ -769,7 +769,7 @@ window.APP_DATA={
        "title": "지수법칙 – 거듭제곱의 거듭제곱",
        "video": "media/concept_9_02.mp4",
        "pdf": "media/concept_9_02_note_A4.pdf",
-       "dur": 59.9
+       "dur": 60.2
       },
       {
        "id": "c9-3",
@@ -777,7 +777,7 @@ window.APP_DATA={
        "title": "지수법칙 – 거듭제곱의 나눗셈",
        "video": "media/concept_9_03.mp4",
        "pdf": "media/concept_9_03_note_A4.pdf",
-       "dur": 73.2
+       "dur": 73.4
       }
      ]
     },
@@ -806,7 +806,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_1.mp4",
        "pdf": "media/p10_1_note_A4.pdf",
-       "dur": 74.2,
+       "dur": 74.3,
        "answer": "(1) 5²⁸ (2) a²¹ (3) x²⁸ (4) x⁴³"
       },
       {
@@ -827,7 +827,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_2.mp4",
        "pdf": "media/p10_2_note_A4.pdf",
-       "dur": 77.2,
+       "dur": 77.3,
        "answer": "④"
       },
       {
@@ -843,7 +843,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_3.mp4",
        "pdf": "media/p10_3_note_A4.pdf",
-       "dur": 56.1,
+       "dur": 56.2,
        "answer": "4"
       },
       {
@@ -859,7 +859,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_4.mp4",
        "pdf": "media/p10_4_note_A4.pdf",
-       "dur": 51.9,
+       "dur": 52.0,
        "answer": "④"
       },
       {
@@ -880,7 +880,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_5.mp4",
        "pdf": "media/p10_5_note_A4.pdf",
-       "dur": 74.4,
+       "dur": 74.5,
        "answer": "ㄱ, ㄴ, ㄹ"
       },
       {
@@ -901,7 +901,7 @@ window.APP_DATA={
        ],
        "video": "media/p10_6.mp4",
        "pdf": "media/p10_6_note_A4.pdf",
-       "dur": 77.5,
+       "dur": 77.6,
        "answer": "15"
       }
      ]
@@ -926,7 +926,7 @@ window.APP_DATA={
        ],
        "video": "media/p11_1.mp4",
        "pdf": "media/p11_1_note_A4.pdf",
-       "dur": 54.1,
+       "dur": 54.2,
        "answer": "(1) 4x⁴y² (2) 9b²/a⁴ (3) −a⁶/b⁹"
       },
       {
@@ -947,7 +947,7 @@ window.APP_DATA={
        ],
        "video": "media/p11_2.mp4",
        "pdf": "media/p11_2_note_A4.pdf",
-       "dur": 69.2,
+       "dur": 69.3,
        "answer": "11"
       },
       {
@@ -979,7 +979,7 @@ window.APP_DATA={
        ],
        "video": "media/p11_4.mp4",
        "pdf": "media/p11_4_note_A4.pdf",
-       "dur": 63.1,
+       "dur": 63.2,
        "answer": "(1) 4, 8, 81a⁸ (2) 10, 2, b¹⁰/16 (3) 3, 12, −8x¹² (4) 2, 4, 25/y⁴"
       },
       {
@@ -1016,7 +1016,7 @@ window.APP_DATA={
        ],
        "video": "media/p11_6.mp4",
        "pdf": "media/p11_6_note_A4.pdf",
-       "dur": 50.8,
+       "dur": 50.9,
        "answer": "(1) x³y¹² (2) 25a⁶b⁸ (3) y⁵/x¹⁰ (4) a⁸/9"
       }
      ],
@@ -1027,7 +1027,7 @@ window.APP_DATA={
        "title": "지수법칙 – 지수의 분배",
        "video": "media/concept_11_01.mp4",
        "pdf": "media/concept_11_01_note_A4.pdf",
-       "dur": 84.7
+       "dur": 84.6
       }
      ]
     },
@@ -1051,7 +1051,7 @@ window.APP_DATA={
        ],
        "video": "media/p12_1.mp4",
        "pdf": "media/p12_1_note_A4.pdf",
-       "dur": 48.0,
+       "dur": 48.1,
        "answer": "(1) 5, 5 (2) 2, 2"
       },
       {
@@ -1067,7 +1067,7 @@ window.APP_DATA={
        ],
        "video": "media/p12_2.mp4",
        "pdf": "media/p12_2_note_A4.pdf",
-       "dur": 61.6,
+       "dur": 61.7,
        "answer": "(1) −5x, −5x; 2, 2, 25x² (2) −y/2 (×4); 4, 4, y⁴/16"
       },
       {
@@ -1104,7 +1104,7 @@ window.APP_DATA={
        ],
        "video": "media/p12_4.mp4",
        "pdf": "media/p12_4_note_A4.pdf",
-       "dur": 67.5,
+       "dur": 67.6,
        "answer": "③"
       },
       {
@@ -1166,7 +1166,7 @@ window.APP_DATA={
        ],
        "video": "media/p13_1.mp4",
        "pdf": "media/p13_1_note_A4.pdf",
-       "dur": 63.8,
+       "dur": 63.7,
        "answer": "(1) 32ab (2) −21ab³ (3) 3x⁷ (4) −10x³y"
       },
       {
@@ -1182,7 +1182,7 @@ window.APP_DATA={
        ],
        "video": "media/p13_2.mp4",
        "pdf": "media/p13_2_note_A4.pdf",
-       "dur": 67.7,
+       "dur": 67.5,
        "answer": "(1) −2x²y (2) −5a/2 (3) 6x"
       },
       {
@@ -1198,7 +1198,7 @@ window.APP_DATA={
        ],
        "video": "media/p13_3.mp4",
        "pdf": "media/p13_3_note_A4.pdf",
-       "dur": 68.7,
+       "dur": 68.6,
        "answer": "(1) −35xy (2) 6xy² (3) ½a²b² (4) −8x⁴y⁵"
       },
       {
@@ -1219,7 +1219,7 @@ window.APP_DATA={
        ],
        "video": "media/p13_4.mp4",
        "pdf": "media/p13_4_note_A4.pdf",
-       "dur": 73.2,
+       "dur": 73.1,
        "answer": "(1) −a²/(2b) (2) 25x³/y⁶ (3) −3/(16x)"
       }
      ],
@@ -1230,7 +1230,7 @@ window.APP_DATA={
        "title": "단항식의 곱셈",
        "video": "media/concept_13_01.mp4",
        "pdf": "media/concept_13_01_note_A4.pdf",
-       "dur": 64.9
+       "dur": 65.0
       },
       {
        "id": "c13-2",
@@ -1238,7 +1238,7 @@ window.APP_DATA={
        "title": "단항식의 나눗셈",
        "video": "media/concept_13_02.mp4",
        "pdf": "media/concept_13_02_note_A4.pdf",
-       "dur": 75.9
+       "dur": 75.7
       }
      ]
     },
@@ -1262,7 +1262,7 @@ window.APP_DATA={
        ],
        "video": "media/p14_1.mp4",
        "pdf": "media/p14_1_note_A4.pdf",
-       "dur": 62.4,
+       "dur": 62.3,
        "answer": "(1) −12x⁸ (2) −40x⁷y⁵ (3) 6x⁴y⁶"
       },
       {
@@ -1440,7 +1440,7 @@ window.APP_DATA={
        ],
        "video": "media/p15_4.mp4",
        "pdf": "media/p15_4_note_A4.pdf",
-       "dur": 67.9,
+       "dur": 68.0,
        "answer": "(1) −1/(2a²b) (2) 9x²/y² (3) x/2"
       }
      ],
@@ -1451,7 +1451,7 @@ window.APP_DATA={
        "title": "단항식의 곱셈과 나눗셈의 혼합 계산",
        "video": "media/concept_15_01.mp4",
        "pdf": "media/concept_15_01_note_A4.pdf",
-       "dur": 83.6
+       "dur": 83.7
       }
      ]
     },
@@ -1480,7 +1480,7 @@ window.APP_DATA={
        ],
        "video": "media/p16_1.mp4",
        "pdf": "media/p16_1_note_A4.pdf",
-       "dur": 83.8,
+       "dur": 83.7,
        "answer": "②"
       },
       {
@@ -1517,7 +1517,7 @@ window.APP_DATA={
        ],
        "video": "media/p16_3.mp4",
        "pdf": "media/p16_3_note_A4.pdf",
-       "dur": 51.6,
+       "dur": 51.5,
        "answer": "−(1/2)xy⁸"
       },
       {
@@ -1533,7 +1533,7 @@ window.APP_DATA={
        ],
        "video": "media/p16_4.mp4",
        "pdf": "media/p16_4_note_A4.pdf",
-       "dur": 59.6,
+       "dur": 59.5,
        "answer": "13"
       },
       {
@@ -1584,7 +1584,7 @@ window.APP_DATA={
        "title": "다항식의 덧셈과 뺄셈",
        "video": "media/concept_17_01.mp4",
        "pdf": "media/concept_17_01_note_A4.pdf",
-       "dur": 75.2
+       "dur": 75.1
       },
       {
        "id": "c17-2",
@@ -1624,7 +1624,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_1.mp4",
        "pdf": "media/p18_1_note_A4.pdf",
-       "dur": 72.3,
+       "dur": 72.2,
        "answer": "(1) −x+7y (2) −a−9b (3) −a−3b+1 (4) 2x+9y−7"
       },
       {
@@ -1640,7 +1640,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_2.mp4",
        "pdf": "media/p18_2_note_A4.pdf",
-       "dur": 51.1,
+       "dur": 51.0,
        "answer": "(1) 15a+20b (2) 7a−42b (3) −18a+3b (4) −24a−21b"
       },
       {
@@ -1656,7 +1656,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_3.mp4",
        "pdf": "media/p18_3_note_A4.pdf",
-       "dur": 57.9,
+       "dur": 57.8,
        "answer": "(1) −3x−4 (2) 2y−3/2 (3) 9x−6"
       },
       {
@@ -1672,7 +1672,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_4.mp4",
        "pdf": "media/p18_4_note_A4.pdf",
-       "dur": 58.0,
+       "dur": 57.9,
        "answer": "(1) −3x²−2x (2) −x²+9x−9"
       },
       {
@@ -1688,7 +1688,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_5.mp4",
        "pdf": "media/p18_5_note_A4.pdf",
-       "dur": 69.2,
+       "dur": 69.1,
        "answer": "(1) ㄱ, ㄷ (2) ㄱ, ㄷ, ㄹ"
       },
       {
@@ -1704,7 +1704,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_6.mp4",
        "pdf": "media/p18_6_note_A4.pdf",
-       "dur": 73.4,
+       "dur": 73.2,
        "answer": "−6x³y⁴+5x²y⁴−6xy³"
       },
       {
@@ -1720,7 +1720,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_7.mp4",
        "pdf": "media/p18_7_note_A4.pdf",
-       "dur": 60.2,
+       "dur": 60.0,
        "answer": "3b²−a"
       },
       {
@@ -1736,7 +1736,7 @@ window.APP_DATA={
        ],
        "video": "media/p18_8.mp4",
        "pdf": "media/p18_8_note_A4.pdf",
-       "dur": 64.7,
+       "dur": 64.6,
        "answer": "7x²−5x"
       }
      ]
@@ -1768,7 +1768,7 @@ window.APP_DATA={
        ],
        "video": "media/p19_1.mp4",
        "pdf": "media/p19_1_note_A4.pdf",
-       "dur": 54.3,
+       "dur": 54.5,
        "answer": "②, ④"
       },
       {
@@ -1784,7 +1784,7 @@ window.APP_DATA={
        ],
        "video": "media/p19_2.mp4",
        "pdf": "media/p19_2_note_A4.pdf",
-       "dur": 83.1,
+       "dur": 83.2,
        "answer": "(1) x=0, 1, 2 (2) x=−2, −1, 0"
       }
      ],
@@ -1795,7 +1795,7 @@ window.APP_DATA={
        "title": "부등식과 그 표현",
        "video": "media/concept_19_01.mp4",
        "pdf": "media/concept_19_01_note_A4.pdf",
-       "dur": 75.0
+       "dur": 75.1
       },
       {
        "id": "c19-2",
@@ -1835,7 +1835,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_1.mp4",
        "pdf": "media/p20_1_note_A4.pdf",
-       "dur": 79.7,
+       "dur": 80.0,
        "answer": "④"
       },
       {
@@ -1851,7 +1851,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_2.mp4",
        "pdf": "media/p20_2_note_A4.pdf",
-       "dur": 60.5,
+       "dur": 60.7,
        "answer": "−2, −1"
       },
       {
@@ -1867,7 +1867,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_3.mp4",
        "pdf": "media/p20_3_note_A4.pdf",
-       "dur": 68.3,
+       "dur": 68.5,
        "answer": "②"
       },
       {
@@ -1883,7 +1883,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_4.mp4",
        "pdf": "media/p20_4_note_A4.pdf",
-       "dur": 51.2,
+       "dur": 51.5,
        "answer": "(1) > (2) > (3) > (4) <"
       },
       {
@@ -1899,7 +1899,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_5.mp4",
        "pdf": "media/p20_5_note_A4.pdf",
-       "dur": 83.8,
+       "dur": 84.0,
        "answer": "④"
       },
       {
@@ -1915,7 +1915,7 @@ window.APP_DATA={
        ],
        "video": "media/p20_6.mp4",
        "pdf": "media/p20_6_note_A4.pdf",
-       "dur": 67.2,
+       "dur": 67.4,
        "answer": "②"
       }
      ]
@@ -1945,7 +1945,7 @@ window.APP_DATA={
        ],
        "video": "media/p21_1.mp4",
        "pdf": "media/p21_1_note_A4.pdf",
-       "dur": 78.7,
+       "dur": 78.6,
        "answer": "(1) x<9 (2) x≥2"
       },
       {
@@ -1977,7 +1977,7 @@ window.APP_DATA={
        "title": "부등식의 해를 수직선 위에 나타내기",
        "video": "media/concept_21_01.mp4",
        "pdf": "media/concept_21_01_note_A4.pdf",
-       "dur": 72.9
+       "dur": 72.8
       },
       {
        "id": "c21-2",
@@ -1985,7 +1985,7 @@ window.APP_DATA={
        "title": "일차부등식과 그 풀이",
        "video": "media/concept_21_02.mp4",
        "pdf": "media/concept_21_02_note_A4.pdf",
-       "dur": 93.6
+       "dur": 93.5
       },
       {
        "id": "c21-3",
@@ -2017,7 +2017,7 @@ window.APP_DATA={
        ],
        "video": "media/p22_1.mp4",
        "pdf": "media/p22_1_note_A4.pdf",
-       "dur": 55.4,
+       "dur": 55.5,
        "answer": "①"
       },
       {
@@ -2065,7 +2065,7 @@ window.APP_DATA={
        ],
        "video": "media/p22_4.mp4",
        "pdf": "media/p22_4_note_A4.pdf",
-       "dur": 66.4,
+       "dur": 66.5,
        "answer": "⑤"
       },
       {
@@ -2086,7 +2086,7 @@ window.APP_DATA={
        ],
        "video": "media/p22_5.mp4",
        "pdf": "media/p22_5_note_A4.pdf",
-       "dur": 75.8,
+       "dur": 75.9,
        "answer": "−11"
       },
       {
@@ -2102,7 +2102,7 @@ window.APP_DATA={
        ],
        "video": "media/p22_6.mp4",
        "pdf": "media/p22_6_note_A4.pdf",
-       "dur": 66.5,
+       "dur": 66.6,
        "answer": "5"
       }
      ]
@@ -2143,7 +2143,7 @@ window.APP_DATA={
        ],
        "video": "media/p23_2.mp4",
        "pdf": "media/p23_2_note_A4.pdf",
-       "dur": 72.5,
+       "dur": 72.4,
        "answer": "①"
       },
       {
@@ -2210,7 +2210,7 @@ window.APP_DATA={
        ],
        "video": "media/p24_1.mp4",
        "pdf": "media/p24_1_note_A4.pdf",
-       "dur": 66.4,
+       "dur": 66.2,
        "answer": "③"
       },
       {
@@ -2226,7 +2226,7 @@ window.APP_DATA={
        ],
        "video": "media/p24_2.mp4",
        "pdf": "media/p24_2_note_A4.pdf",
-       "dur": 72.8,
+       "dur": 72.7,
        "answer": "4개"
       },
       {
@@ -2242,7 +2242,7 @@ window.APP_DATA={
        ],
        "video": "media/p24_3.mp4",
        "pdf": "media/p24_3_note_A4.pdf",
-       "dur": 69.3,
+       "dur": 69.2,
        "answer": "③"
       },
       {
@@ -2274,7 +2274,7 @@ window.APP_DATA={
        ],
        "video": "media/p24_5.mp4",
        "pdf": "media/p24_5_note_A4.pdf",
-       "dur": 71.6,
+       "dur": 71.5,
        "answer": "21명"
       },
       {
@@ -2295,7 +2295,7 @@ window.APP_DATA={
        ],
        "video": "media/p24_6.mp4",
        "pdf": "media/p24_6_note_A4.pdf",
-       "dur": 95.8,
+       "dur": 95.7,
        "answer": "3km"
       }
      ]
@@ -2343,7 +2343,7 @@ window.APP_DATA={
        ],
        "video": "media/p25_2.mp4",
        "pdf": "media/p25_2_note_A4.pdf",
-       "dur": 86.7,
+       "dur": 86.8,
        "answer": "(1) y=7−x; (1,6),(2,5),(3,4),(4,3),(5,2),(6,1) (2) x=20−5y; (15,1),(10,2),(5,3)"
       }
      ],
@@ -2362,7 +2362,7 @@ window.APP_DATA={
        "title": "미지수가 2개인 일차방정식의 해",
        "video": "media/concept_25_02.mp4",
        "pdf": "media/concept_25_02_note_A4.pdf",
-       "dur": 82.5
+       "dur": 82.6
       }
      ]
     },
@@ -2434,7 +2434,7 @@ window.APP_DATA={
        ],
        "video": "media/p26_4.mp4",
        "pdf": "media/p26_4_note_A4.pdf",
-       "dur": 50.3,
+       "dur": 50.2,
        "answer": "3"
       },
       {
@@ -2450,7 +2450,7 @@ window.APP_DATA={
        ],
        "video": "media/p26_5.mp4",
        "pdf": "media/p26_5_note_A4.pdf",
-       "dur": 73.7,
+       "dur": 73.6,
        "answer": "④"
       },
       {
@@ -2466,7 +2466,7 @@ window.APP_DATA={
        ],
        "video": "media/p26_6.mp4",
        "pdf": "media/p26_6_note_A4.pdf",
-       "dur": 59.0,
+       "dur": 58.9,
        "answer": "7"
       }
      ]
@@ -2507,7 +2507,7 @@ window.APP_DATA={
        ],
        "video": "media/p27_2.mp4",
        "pdf": "media/p27_2_note_A4.pdf",
-       "dur": 58.9,
+       "dur": 59.0,
        "answer": "(5, 1)"
       },
       {
@@ -2539,7 +2539,7 @@ window.APP_DATA={
        ],
        "video": "media/p27_4.mp4",
        "pdf": "media/p27_4_note_A4.pdf",
-       "dur": 55.6,
+       "dur": 55.7,
        "answer": "②"
       }
      ],
@@ -2550,7 +2550,7 @@ window.APP_DATA={
        "title": "연립방정식과 그 해",
        "video": "media/concept_27_01.mp4",
        "pdf": "media/concept_27_01_note_A4.pdf",
-       "dur": 76.9
+       "dur": 77.0
       }
      ]
     },
@@ -2574,7 +2574,7 @@ window.APP_DATA={
        ],
        "video": "media/p28_1.mp4",
        "pdf": "media/p28_1_note_A4.pdf",
-       "dur": 62.9,
+       "dur": 63.0,
        "answer": "(2, 3)"
       },
       {
@@ -2590,7 +2590,7 @@ window.APP_DATA={
        ],
        "video": "media/p28_2.mp4",
        "pdf": "media/p28_2_note_A4.pdf",
-       "dur": 57.0,
+       "dur": 57.1,
        "answer": "②"
       },
       {
@@ -2606,7 +2606,7 @@ window.APP_DATA={
        ],
        "video": "media/p28_3.mp4",
        "pdf": "media/p28_3_note_A4.pdf",
-       "dur": 53.6,
+       "dur": 53.7,
        "answer": "x=3, y=4"
       },
       {
@@ -2638,7 +2638,7 @@ window.APP_DATA={
        ],
        "video": "media/p28_5.mp4",
        "pdf": "media/p28_5_note_A4.pdf",
-       "dur": 53.3,
+       "dur": 53.4,
        "answer": "5"
       },
       {
@@ -2654,7 +2654,7 @@ window.APP_DATA={
        ],
        "video": "media/p28_6.mp4",
        "pdf": "media/p28_6_note_A4.pdf",
-       "dur": 76.7,
+       "dur": 76.8,
        "answer": "ㄱ, ㄹ"
       }
      ]
@@ -2746,7 +2746,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_1.mp4",
        "pdf": "media/p30_1_note_A4.pdf",
-       "dur": 64.5,
+       "dur": 64.7,
        "answer": "(1) +, 1, −1 (2) −, 4, 8"
       },
       {
@@ -2762,7 +2762,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_2.mp4",
        "pdf": "media/p30_2_note_A4.pdf",
-       "dur": 65.6,
+       "dur": 65.8,
        "answer": "②"
       },
       {
@@ -2778,7 +2778,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_3.mp4",
        "pdf": "media/p30_3_note_A4.pdf",
-       "dur": 54.6,
+       "dur": 54.8,
        "answer": "④"
       },
       {
@@ -2794,7 +2794,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_4.mp4",
        "pdf": "media/p30_4_note_A4.pdf",
-       "dur": 60.5,
+       "dur": 60.8,
        "answer": "①"
       },
       {
@@ -2810,7 +2810,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_5.mp4",
        "pdf": "media/p30_5_note_A4.pdf",
-       "dur": 54.5,
+       "dur": 54.7,
        "answer": "−2"
       },
       {
@@ -2826,7 +2826,7 @@ window.APP_DATA={
        ],
        "video": "media/p30_6.mp4",
        "pdf": "media/p30_6_note_A4.pdf",
-       "dur": 60.2,
+       "dur": 60.4,
        "answer": "15"
       }
      ]
@@ -2885,7 +2885,7 @@ window.APP_DATA={
        ],
        "video": "media/p32_1.mp4",
        "pdf": "media/p32_1_note_A4.pdf",
-       "dur": 54.6,
+       "dur": 54.5,
        "answer": "⑤"
       },
       {
@@ -2917,7 +2917,7 @@ window.APP_DATA={
        ],
        "video": "media/p32_3.mp4",
        "pdf": "media/p32_3_note_A4.pdf",
-       "dur": 55.1,
+       "dur": 55.0,
        "answer": "①"
       },
       {
@@ -2933,7 +2933,7 @@ window.APP_DATA={
        ],
        "video": "media/p32_4.mp4",
        "pdf": "media/p32_4_note_A4.pdf",
-       "dur": 69.2,
+       "dur": 69.1,
        "answer": "⑤"
       },
       {
@@ -3017,7 +3017,7 @@ window.APP_DATA={
        "title": "연립방정식의 활용 문제",
        "video": "media/concept_33_01.mp4",
        "pdf": "media/concept_33_01_note_A4.pdf",
-       "dur": 68.8
+       "dur": 68.7
       },
       {
        "id": "c33-2",
@@ -3049,7 +3049,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_1.mp4",
        "pdf": "media/p34_1_note_A4.pdf",
-       "dur": 60.7,
+       "dur": 60.4,
        "answer": "(1) x+y=8, 2x+y=10 (2) 강아지 2마리, 병아리 6마리"
       },
       {
@@ -3065,7 +3065,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_2.mp4",
        "pdf": "media/p34_2_note_A4.pdf",
-       "dur": 65.2,
+       "dur": 64.9,
        "answer": "(2) x+y=9, 500x+300y=3100 (3) x=2, y=7 (4) 2, 7"
       },
       {
@@ -3081,7 +3081,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_3.mp4",
        "pdf": "media/p34_3_note_A4.pdf",
-       "dur": 52.3,
+       "dur": 52.1,
        "answer": "21"
       },
       {
@@ -3097,7 +3097,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_4.mp4",
        "pdf": "media/p34_4_note_A4.pdf",
-       "dur": 63.0,
+       "dur": 62.7,
        "answer": "45세, 34세"
       },
       {
@@ -3113,7 +3113,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_5.mp4",
        "pdf": "media/p34_5_note_A4.pdf",
-       "dur": 67.8,
+       "dur": 67.6,
        "answer": "143"
       },
       {
@@ -3129,7 +3129,7 @@ window.APP_DATA={
        ],
        "video": "media/p34_6.mp4",
        "pdf": "media/p34_6_note_A4.pdf",
-       "dur": 64.1,
+       "dur": 63.9,
        "answer": "48"
       }
      ]
@@ -3188,7 +3188,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_1.mp4",
        "pdf": "media/p36_1_note_A4.pdf",
-       "dur": 72.6,
+       "dur": 72.5,
        "answer": "③"
       },
       {
@@ -3204,7 +3204,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_2.mp4",
        "pdf": "media/p36_2_note_A4.pdf",
-       "dur": 63.3,
+       "dur": 63.2,
        "answer": "5일"
       },
       {
@@ -3220,7 +3220,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_3.mp4",
        "pdf": "media/p36_3_note_A4.pdf",
-       "dur": 73.6,
+       "dur": 73.5,
        "answer": "3km"
       },
       {
@@ -3236,7 +3236,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_4.mp4",
        "pdf": "media/p36_4_note_A4.pdf",
-       "dur": 79.2,
+       "dur": 79.1,
        "answer": "630명"
       },
       {
@@ -3252,7 +3252,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_5.mp4",
        "pdf": "media/p36_5_note_A4.pdf",
-       "dur": 70.6,
+       "dur": 70.4,
        "answer": "②"
       },
       {
@@ -3268,7 +3268,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_6.mp4",
        "pdf": "media/p36_6_note_A4.pdf",
-       "dur": 64.5,
+       "dur": 64.4,
        "answer": "8분"
       },
       {
@@ -3284,7 +3284,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_7.mp4",
        "pdf": "media/p36_7_note_A4.pdf",
-       "dur": 66.1,
+       "dur": 66.0,
        "answer": "10분"
       },
       {
@@ -3300,7 +3300,7 @@ window.APP_DATA={
        ],
        "video": "media/p36_8.mp4",
        "pdf": "media/p36_8_note_A4.pdf",
-       "dur": 76.2,
+       "dur": 76.0,
        "answer": "308개"
       }
      ]
@@ -3332,7 +3332,7 @@ window.APP_DATA={
        ],
        "video": "media/p37_1.mp4",
        "pdf": "media/p37_1_note_A4.pdf",
-       "dur": 45.7,
+       "dur": 45.5,
        "answer": "(1) −6 (2) 4 (3) −4"
       },
       {
@@ -3348,7 +3348,7 @@ window.APP_DATA={
        ],
        "video": "media/p37_2.mp4",
        "pdf": "media/p37_2_note_A4.pdf",
-       "dur": 40.7,
+       "dur": 40.6,
        "answer": "(1) 0 (2) 6, −6"
       },
       {
@@ -3380,7 +3380,7 @@ window.APP_DATA={
        ],
        "video": "media/p37_4.mp4",
        "pdf": "media/p37_4_note_A4.pdf",
-       "dur": 40.5,
+       "dur": 40.4,
        "answer": "−4"
       }
      ],
@@ -3391,7 +3391,7 @@ window.APP_DATA={
        "title": "함수의 뜻",
        "video": "media/concept_37_01.mp4",
        "pdf": "media/concept_37_01_note_A4.pdf",
-       "dur": 66.5
+       "dur": 66.3
       },
       {
        "id": "c37-2",
@@ -3399,7 +3399,7 @@ window.APP_DATA={
        "title": "함숫값",
        "video": "media/concept_37_02.mp4",
        "pdf": "media/concept_37_02_note_A4.pdf",
-       "dur": 46.2
+       "dur": 46.0
       }
      ]
     },
@@ -3423,7 +3423,7 @@ window.APP_DATA={
        ],
        "video": "media/p38_1.mp4",
        "pdf": "media/p38_1_note_A4.pdf",
-       "dur": 59.4,
+       "dur": 59.5,
        "answer": "ㄴ, ㄷ"
       },
       {
@@ -3439,7 +3439,7 @@ window.APP_DATA={
        ],
        "video": "media/p38_2.mp4",
        "pdf": "media/p38_2_note_A4.pdf",
-       "dur": 41.8,
+       "dur": 41.9,
        "answer": "(1) −28 (2) −21 (3) 14 (4) 28"
       },
       {
@@ -3471,7 +3471,7 @@ window.APP_DATA={
        ],
        "video": "media/p38_4.mp4",
        "pdf": "media/p38_4_note_A4.pdf",
-       "dur": 48.5,
+       "dur": 48.6,
        "answer": "①"
       },
       {
@@ -3487,7 +3487,7 @@ window.APP_DATA={
        ],
        "video": "media/p38_5.mp4",
        "pdf": "media/p38_5_note_A4.pdf",
-       "dur": 42.6,
+       "dur": 42.7,
        "answer": "3"
       },
       {
@@ -3503,7 +3503,7 @@ window.APP_DATA={
        ],
        "video": "media/p38_6.mp4",
        "pdf": "media/p38_6_note_A4.pdf",
-       "dur": 45.9,
+       "dur": 46.0,
        "answer": "−8"
       }
      ]
@@ -3576,7 +3576,7 @@ window.APP_DATA={
        "title": "일차함수 y=ax+b의 그래프와 평행이동",
        "video": "media/concept_39_03.mp4",
        "pdf": "media/concept_39_03_note_A4.pdf",
-       "dur": 51.3
+       "dur": 51.2
       }
      ]
     },
@@ -3600,7 +3600,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_1.mp4",
        "pdf": "media/p40_1_note_A4.pdf",
-       "dur": 56.1,
+       "dur": 56.3,
        "answer": "㉠, ㉣"
       },
       {
@@ -3616,7 +3616,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_2.mp4",
        "pdf": "media/p40_2_note_A4.pdf",
-       "dur": 65.2,
+       "dur": 65.4,
        "answer": "(1) 점 (−4,−2), (−2,−1), (0,0), (2,1), (4,2) (2) 원점과 (2,1)을 지나는 직선"
       },
       {
@@ -3632,7 +3632,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_3.mp4",
        "pdf": "media/p40_3_note_A4.pdf",
-       "dur": 46.6,
+       "dur": 46.8,
        "answer": "②, ④"
       },
       {
@@ -3648,7 +3648,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_4.mp4",
        "pdf": "media/p40_4_note_A4.pdf",
-       "dur": 59.0,
+       "dur": 59.1,
        "answer": "(1) ㉡ (2) ㉢ (3) ㉠ (4) ㉣"
       },
       {
@@ -3664,7 +3664,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_5.mp4",
        "pdf": "media/p40_5_note_A4.pdf",
-       "dur": 54.1,
+       "dur": 54.2,
        "answer": "⑤"
       },
       {
@@ -3680,7 +3680,7 @@ window.APP_DATA={
        ],
        "video": "media/p40_6.mp4",
        "pdf": "media/p40_6_note_A4.pdf",
-       "dur": 60.8,
+       "dur": 60.9,
        "answer": "a=0, b≠4"
       }
      ]
@@ -3710,7 +3710,7 @@ window.APP_DATA={
        ],
        "video": "media/p41_1.mp4",
        "pdf": "media/p41_1_note_A4.pdf",
-       "dur": 45.1,
+       "dur": 45.2,
        "answer": "1"
       },
       {
@@ -3745,7 +3745,7 @@ window.APP_DATA={
        "title": "기울기",
        "video": "media/concept_41_02.mp4",
        "pdf": "media/concept_41_02_note_A4.pdf",
-       "dur": 65.9
+       "dur": 66.1
       }
      ]
     },
@@ -3769,7 +3769,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_1.mp4",
        "pdf": "media/p42_1_note_A4.pdf",
-       "dur": 62.8,
+       "dur": 62.6,
        "answer": "(1) −7/5 (2) 1 (3) 3/2"
       },
       {
@@ -3785,7 +3785,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_2.mp4",
        "pdf": "media/p42_2_note_A4.pdf",
-       "dur": 44.2,
+       "dur": 44.1,
        "answer": "③"
       },
       {
@@ -3801,7 +3801,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_3.mp4",
        "pdf": "media/p42_3_note_A4.pdf",
-       "dur": 51.4,
+       "dur": 51.1,
        "answer": "5/2"
       },
       {
@@ -3817,7 +3817,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_4.mp4",
        "pdf": "media/p42_4_note_A4.pdf",
-       "dur": 45.2,
+       "dur": 45.0,
        "answer": "(1) x절편 2, y절편 3 (2) 두 점 (2,0), (0,3)을 지나는 직선"
       },
       {
@@ -3838,7 +3838,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_5.mp4",
        "pdf": "media/p42_5_note_A4.pdf",
-       "dur": 57.1,
+       "dur": 57.0,
        "answer": "10"
       },
       {
@@ -3854,7 +3854,7 @@ window.APP_DATA={
        ],
        "video": "media/p42_6.mp4",
        "pdf": "media/p42_6_note_A4.pdf",
-       "dur": 47.4,
+       "dur": 47.1,
        "answer": "8/5"
       }
      ]
@@ -3884,7 +3884,7 @@ window.APP_DATA={
        ],
        "video": "media/p43_1.mp4",
        "pdf": "media/p43_1_note_A4.pdf",
-       "dur": 57.5,
+       "dur": 57.3,
        "answer": "(1) ㉡, ㉤ (2) ㉢ (3) ㉣ (4) ㉠"
       },
       {
@@ -3900,7 +3900,7 @@ window.APP_DATA={
        ],
        "video": "media/p43_2.mp4",
        "pdf": "media/p43_2_note_A4.pdf",
-       "dur": 51.1,
+       "dur": 50.9,
        "answer": "㉡, ㉣"
       }
      ],
@@ -3911,7 +3911,7 @@ window.APP_DATA={
        "title": "a, b의 부호와 그래프",
        "video": "media/concept_43_01.mp4",
        "pdf": "media/concept_43_01_note_A4.pdf",
-       "dur": 54.6
+       "dur": 54.5
       },
       {
        "id": "c43-2",
@@ -3919,7 +3919,7 @@ window.APP_DATA={
        "title": "두 일차함수의 그래프의 평행과 일치",
        "video": "media/concept_43_02.mp4",
        "pdf": "media/concept_43_02_note_A4.pdf",
-       "dur": 50.2
+       "dur": 50.1
       }
      ]
     },
@@ -3948,7 +3948,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_1.mp4",
        "pdf": "media/p44_1_note_A4.pdf",
-       "dur": 66.3,
+       "dur": 66.2,
        "answer": "③"
       },
       {
@@ -3964,7 +3964,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_2.mp4",
        "pdf": "media/p44_2_note_A4.pdf",
-       "dur": 44.8,
+       "dur": 44.6,
        "answer": "a<0, b<0"
       },
       {
@@ -3980,7 +3980,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_3.mp4",
        "pdf": "media/p44_3_note_A4.pdf",
-       "dur": 68.9,
+       "dur": 68.8,
        "answer": "제2사분면"
       },
       {
@@ -4001,7 +4001,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_4.mp4",
        "pdf": "media/p44_4_note_A4.pdf",
-       "dur": 51.3,
+       "dur": 51.2,
        "answer": "2"
       },
       {
@@ -4017,7 +4017,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_5.mp4",
        "pdf": "media/p44_5_note_A4.pdf",
-       "dur": 48.3,
+       "dur": 48.2,
        "answer": "−5"
       },
       {
@@ -4033,7 +4033,7 @@ window.APP_DATA={
        ],
        "video": "media/p44_6.mp4",
        "pdf": "media/p44_6_note_A4.pdf",
-       "dur": 36.1,
+       "dur": 36.0,
        "answer": "①"
       }
      ]
@@ -4092,7 +4092,7 @@ window.APP_DATA={
        ],
        "video": "media/p46_1.mp4",
        "pdf": "media/p46_1_note_A4.pdf",
-       "dur": 39.8,
+       "dur": 39.9,
        "answer": "②"
       },
       {
@@ -4129,7 +4129,7 @@ window.APP_DATA={
        ],
        "video": "media/p46_3.mp4",
        "pdf": "media/p46_3_note_A4.pdf",
-       "dur": 63.5,
+       "dur": 63.3,
        "answer": "7"
       },
       {
@@ -4145,7 +4145,7 @@ window.APP_DATA={
        ],
        "video": "media/p46_4.mp4",
        "pdf": "media/p46_4_note_A4.pdf",
-       "dur": 48.9,
+       "dur": 48.8,
        "answer": "6"
       },
       {
@@ -4187,7 +4187,7 @@ window.APP_DATA={
        ],
        "video": "media/p46_6.mp4",
        "pdf": "media/p46_6_note_A4.pdf",
-       "dur": 58.7,
+       "dur": 58.6,
        "answer": "−3/2"
       },
       {
@@ -4219,7 +4219,7 @@ window.APP_DATA={
        ],
        "video": "media/p46_8.mp4",
        "pdf": "media/p46_8_note_A4.pdf",
-       "dur": 67.3,
+       "dur": 67.2,
        "answer": "10"
       }
      ]
@@ -4249,7 +4249,7 @@ window.APP_DATA={
        ],
        "video": "media/p47_1.mp4",
        "pdf": "media/p47_1_note_A4.pdf",
-       "dur": 45.9,
+       "dur": 45.7,
        "answer": "−12"
       },
       {
@@ -4270,7 +4270,7 @@ window.APP_DATA={
        ],
        "video": "media/p47_2.mp4",
        "pdf": "media/p47_2_note_A4.pdf",
-       "dur": 48.4,
+       "dur": 48.3,
        "answer": "1/3"
       }
      ],
@@ -4281,7 +4281,7 @@ window.APP_DATA={
        "title": "미지수가 2개인 일차방정식의 그래프",
        "video": "media/concept_47_01.mp4",
        "pdf": "media/concept_47_01_note_A4.pdf",
-       "dur": 64.2
+       "dur": 64.0
       },
       {
        "id": "c47-2",
@@ -4289,7 +4289,7 @@ window.APP_DATA={
        "title": "일차방정식과 일차함수의 그래프",
        "video": "media/concept_47_02.mp4",
        "pdf": "media/concept_47_02_note_A4.pdf",
-       "dur": 51.8
+       "dur": 51.7
       },
       {
        "id": "c47-3",
@@ -4405,7 +4405,7 @@ window.APP_DATA={
        ],
        "video": "media/p48_5.mp4",
        "pdf": "media/p48_5_note_A4.pdf",
-       "dur": 63.1,
+       "dur": 63.2,
        "answer": "③, ⑤"
       },
       {
@@ -4446,7 +4446,7 @@ window.APP_DATA={
        ],
        "video": "media/p49_1.mp4",
        "pdf": "media/p49_1_note_A4.pdf",
-       "dur": 63.9,
+       "dur": 63.8,
        "answer": "−3, 1, 8/3 ; −3, 1, −9"
       },
       {
@@ -4473,7 +4473,7 @@ window.APP_DATA={
        "title": "연립방정식의 해와 그래프",
        "video": "media/concept_49_01.mp4",
        "pdf": "media/concept_49_01_note_A4.pdf",
-       "dur": 55.0
+       "dur": 54.9
       },
       {
        "id": "c49-2",
@@ -4481,7 +4481,7 @@ window.APP_DATA={
        "title": "두 그래프의 위치 관계와 해의 개수",
        "video": "media/concept_49_02.mp4",
        "pdf": "media/concept_49_02_note_A4.pdf",
-       "dur": 56.3
+       "dur": 56.2
       }
      ]
     },
@@ -4505,7 +4505,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_1.mp4",
        "pdf": "media/p50_1_note_A4.pdf",
-       "dur": 57.1,
+       "dur": 57.3,
        "answer": "(1) a=6, b≠−4 (2) a=6, b=−4 (3) a≠6"
       },
       {
@@ -4521,7 +4521,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_2.mp4",
        "pdf": "media/p50_2_note_A4.pdf",
-       "dur": 46.8,
+       "dur": 46.9,
        "answer": "−1"
       },
       {
@@ -4542,7 +4542,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_3.mp4",
        "pdf": "media/p50_3_note_A4.pdf",
-       "dur": 66.4,
+       "dur": 66.6,
        "answer": "(2, 1)"
       },
       {
@@ -4563,7 +4563,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_4.mp4",
        "pdf": "media/p50_4_note_A4.pdf",
-       "dur": 49.5,
+       "dur": 49.7,
        "answer": "−3"
       },
       {
@@ -4579,7 +4579,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_5.mp4",
        "pdf": "media/p50_5_note_A4.pdf",
-       "dur": 58.5,
+       "dur": 58.6,
        "answer": "a=−2/3, b≠−3"
       },
       {
@@ -4595,7 +4595,7 @@ window.APP_DATA={
        ],
        "video": "media/p50_6.mp4",
        "pdf": "media/p50_6_note_A4.pdf",
-       "dur": 46.9,
+       "dur": 47.1,
        "answer": "③"
       }
      ]
@@ -4646,7 +4646,7 @@ window.APP_DATA={
        ],
        "video": "media/p51_2.mp4",
        "pdf": "media/p51_2_note_A4.pdf",
-       "dur": 67.5,
+       "dur": 67.6,
        "answer": "(1) y=60−4x, 0≤x≤15 (2) 15분"
       }
      ],
@@ -4702,7 +4702,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_1.mp4",
        "pdf": "media/p52_1_note_A4.pdf",
-       "dur": 74.5,
+       "dur": 74.4,
        "answer": "④"
       },
       {
@@ -4723,7 +4723,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_2.mp4",
        "pdf": "media/p52_2_note_A4.pdf",
-       "dur": 55.4,
+       "dur": 55.3,
        "answer": "y=270−3x (0≤x≤90)"
       },
       {
@@ -4739,7 +4739,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_3.mp4",
        "pdf": "media/p52_3_note_A4.pdf",
-       "dur": 59.4,
+       "dur": 59.2,
        "answer": "y=3x+1, 37개"
       },
       {
@@ -4755,7 +4755,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_4.mp4",
        "pdf": "media/p52_4_note_A4.pdf",
-       "dur": 58.2,
+       "dur": 58.0,
        "answer": "4600m"
       },
       {
@@ -4771,7 +4771,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_5.mp4",
        "pdf": "media/p52_5_note_A4.pdf",
-       "dur": 53.5,
+       "dur": 53.4,
        "answer": "③"
       },
       {
@@ -4787,7 +4787,7 @@ window.APP_DATA={
        ],
        "video": "media/p52_6.mp4",
        "pdf": "media/p52_6_note_A4.pdf",
-       "dur": 49.9,
+       "dur": 49.7,
        "answer": "20L"
       }
      ]

@@ -322,7 +322,9 @@ function unlockO(){try{if(screen.orientation&&screen.orientation.unlock) screen.
 function exitFS(){try{ if(document.fullscreenElement) document.exitFullscreen().catch(()=>{}); else if(document.webkitFullscreenElement) document.webkitExitFullscreen(); }catch(e){}}
 function showCtl(){$('#ctl').classList.remove('hide');$('#x').classList.remove('hide');clearTimeout(hideT);
   if(!V.paused) hideT=setTimeout(()=>{$('#ctl').classList.add('hide');$('#x').classList.add('hide');$('#spdrow').classList.remove('on')},1500);}
-function openV(){ if(!V.getAttribute('src')&&V.dataset.src){V.src=V.dataset.src;V.load();}
+function openV(){ if(ov.classList.contains('on')) return; /* no double open -> no enter/exit loop */
+  V.muted=false; V.defaultMuted=false; V.autoplay=false; /* always with sound, never autoplay */
+  if(!V.getAttribute('src')&&V.dataset.src){V.src=V.dataset.src;V.load();}
   ov.classList.add('on');document.body.style.overflow='hidden';layout();
   const p=V.play(); if(p&&p.catch) p.catch(()=>{}); showCtl();
   const ph=isPhone(); ov.classList.toggle('phone',ph); fsSeen=false; layout(); if(!ph) return;
@@ -355,6 +357,7 @@ V.addEventListener('pause',()=>{$('#pp').textContent='▶';$('#bigplay').classLi
 window.addEventListener('resize',()=>{if(ov.classList.contains('on'))layout()});
 const fsOut=()=>{ const fe=document.fullscreenElement||document.webkitFullscreenElement; if(fe){fsSeen=true;return;}
   if(fsSeen&&ov.classList.contains('on')) closeV(); else if(ov.classList.contains('on')) layout(); };
+V.addEventListener('webkitendfullscreen',closeV); /* iOS/native video fullscreen exit */
 document.addEventListener('fullscreenchange',fsOut); document.addEventListener('webkitfullscreenchange',fsOut);
 window.addEventListener('pagehide',closeV); window.addEventListener('popstate',closeV);
 document.addEventListener('visibilitychange',()=>{ if(document.hidden) closeV(); });
